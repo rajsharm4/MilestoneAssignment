@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background-image: linear-gradient(
+    #ffbd00,
+    #ff5400,
+    #ff0054,
+    #9e0059,
+    #390099
+  );
+  background-image: no-repeat;
+  background-size: cover; */
+  background-image: linear-gradient(
+    rgb(208, 176, 252),
+    rgb(133, 51, 210),
+    #390099
+  );
+  height: 100vh;
+  background-image: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  margin-top: 30px 0;
+  color: blue;
+  rotate: 360deg;
+  transition: 10s rotate 2s;
+}
+
+#box {
+  border-radius: 5px;
+  background-color: #eee8e8;
+  padding: 10px;
+  width: 480px;
+}
+
+.task {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.item-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+
+.item-button i {
+  color: blue;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.item.completed p {
+  text-decoration: line-through;
+  color: #11111180;
+}
+
+#input {
+  margin-bottom: 18em;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #ccc;
+  width: 100%;
+}
+
+button {
+  margin-bottom: 18em;
+  padding: 7px;
+  border: 1px solid blue;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  background-color: blue;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+button.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+button:hover {
+  background-color: #fff;
+  color: blue;
+}
