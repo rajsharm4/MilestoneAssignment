@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validator</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Password Validator -->
+    <div id="form">
+      <label for="password" id="password1">Password</label>
+      <input
+        type="text"
+        class="input"
+        placeholder="Type your password here"
+        id="password"
+        value=""
+        required
+      />
+      <label for="cpassword" id="cpassword1">Confirm Password</label>
+      <input
+        type="text"
+        class="input"
+        placeholder="Confirm password here"
+        id="confirmpassword"
+        value=""
+        required
+      />
+      <p id="message"></p>
+      <div id="btn">
+        <input
+          type="button"
+          id="button"
+          value="SUBMIT"
+          onclick="passwordvalidate()"
+        />
+      </div>
+    </div>
+    <!-- link with Javascript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
