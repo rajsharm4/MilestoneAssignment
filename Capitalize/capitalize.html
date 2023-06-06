@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./capitalize.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Capitalize Project -->
+    <div class="formbox">
+      <!-- form area -->
+      <form id="form">
+        <h1>Capitalize the first letter</h1>
+        <label
+          >User-Name:
+          <input
+            type="text"
+            id="username"
+            placeholder="Please enter your name"
+            required
+          />
+        </label>
+        <!-- This is submit button for check -->
+        <button onclick="capitalizename()" type="button">Submit</button>
+
+        <!-- Empty container is used to show the correct form of name -->
+        <div id="container"></div>
+      </form>
+    </div>
+
+    <!-- link with Javascript File -->
+    <script src="capitalize.js"></script>
+  </body>
+</html>
