@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #51f1b6;
+}
+
+h1 {
+  margin: 2em 7em;
+  color: #fc1414;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 27em;
+  padding: 18px;
+  gap: 5px;
+  border: 1px solid yellow;
+  box-shadow: 20px 0px 20px 0px yellowgreen;
+  border-radius: 20px;
+  background-color: #f4e1a8;
+}
+
+label {
+  color: rgb(5, 109, 34);
+  font-size: 20px;
+}
+
+#input {
+  padding: 5px;
+  margin: 0 160px;
+  border: 1px solid rgb(237, 117, 12);
+  border-radius: 10px;
+  font-weight: 600;
+  color: rgb(255, 74, 3);
+}
+
+#button {
+  /* margin: 10px;
+    margin-right:  340px; */
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #5e8f1a;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 10px 0px 20px 0px rgb(13, 228, 2);
+}
+
+#reload {
+  /* margin-bottom: 7em;
+    margin-left:  340px; */
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #4c7fee;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 10px 0px 20px 0px rgb(123, 46, 240);
+}
+
+.btn {
+  display: flex;
+  gap: 15em;
+}
+
+#container {
+  text-align: center;
+  border: 10px solid #fff;
+  margin: 1em 27em;
+  padding: 10px;
+  color: #fc5914;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: #000;
+}
