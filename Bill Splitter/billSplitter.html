@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitter</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./billSplitter.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bill Splitter -->
+    <header>
+      <h1>Restaurant Bill Splitter</h1>
+    </header>
+    <main>
+      <!-- Input Section of the Restaurant Bill -->
+      <div id="input-screen">
+        <div id="input-screen-1">
+          <label for="dishesOnTable"
+            >Enter number of dishes entered by customer on table</label
+          >
+          <input type="number" id="dishesOnTable" />
+        </div>
+        <button type="button" id="dishButton">create dish</button>
+      </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div id="input-screen-2">
+        <header>
+          <h3>Enter different-different dishes price</h3>
+        </header>
+        <div id="input-2-body">
+          <!-- adding div, label, and input tag from javascript -->
+        </div>
+        <footer id="input-2-footer">
+          <button id="input-2-button" type="button">submit</button>
+        </footer>
+      </div>
+
+      <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div id="input-screen-3">
+        <span>
+          <label for="persons">Enter total no. of people sharing dishes</label>
+          <input type="number" id="persons" />
+        </span>
+        <button type="button" id="persons-btn">Calculate bill</button>
+      </div>
+
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+      <!-- output section of the restaurant bill splitter -->
+      <div id="output-screen">
+        <p id="total-bill">
+          <!-- adding total bill from javascript -->
+        </p>
+        <p id="bill-per-person">
+          <!-- adding bill per person fom javascript -->
+        </p>
+      </div>
+    </main>
+    <!-- link with Javascript File -->
+    <script src="./billSplitter.js"></script>
+  </body>
+</html>

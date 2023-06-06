@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./home.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d38f9f2bd7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Bank Home Page -->
+    <!-- header section -->
+    <div class="header">
+      <p class="head">Central Bank</p>
+      <p style="font-weight: 500">
+        Total Balance $<span id="tba" style="font-weight: 500">000</span>
+      </p>
+      <a href="bankingApplication.html">⬅️</a>
+    </div>
+
+    <!-- Main section -->
+    <div class="main">
+      <div class="box">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <p class="p1">Total Deposit</p>
+        <p id="d" class="p2">$<span id="de">000</span></p>
+      </div>
+      <div class="box">
+        <i class="fa-sharp fa-solid fa-money-bill-transfer"></i>
+        <p class="p1">Total Withdraw</p>
+        <p id="w" class="p2">$<span id="wi">000</span></p>
+      </div>
+      <div class="box">
+        <i class="fa-sharp fa-solid fa-coins"></i>
+        <p class="p1">Total Balance</p>
+        <p
+          id="tb
+        "
+          class="p2"
+        >
+          $<span id="t">000</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Calculation section -->
+    <div class="calculation">
+      <div class="box2">
+        <p>Deposit</p>
+        <div class="flex">
+          <input type="number" placeholder="Deposit Ammount" id="deposit" />
+          <button type="button" id="depo">Deposit</button>
+        </div>
+      </div>
+      <div class="box2">
+        <p>Withdraw</p>
+        <div class="flex">
+          <input type="number" placeholder="Withdraw Ammount" id="withdraw" />
+          <button type="button" id="withd">Withdraw</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link with Javascript File -->
+    <script src="./home.js"></script>
+  </body>
+</html>
