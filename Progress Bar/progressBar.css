@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  color: #954203;
+}
+
+.container {
+  background-color: #fbfbfb;
+  border: 1px solid orange;
+  padding: 3px;
+  margin: 2em 3em;
+  border-radius: 15px;
+}
+
+.container .progress-bar {
+  background-color: #f18b3c;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+button {
+  margin-left: 30em;
+  background-color: #68aa06;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #68aa06;
+}
+
+#play-animation {
+  animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
