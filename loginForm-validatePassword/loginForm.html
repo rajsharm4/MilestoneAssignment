@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- link with CSS File -->
+    <link rel="stylesheet" href="./loginForm.css" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- login Form Project -->
+    <form id="form">
+      <h1>Login</h1>
+      <div class="flex">
+        <input type="email" id="email" placeholder="Type your Email" required />
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          type="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          required
+        />
+      </div>
+      <button type="button" id="btn" onclick="validateForm()">Log In</button>
+      <div id="container"></div>
+    </form>
+
+    <!-- Link with Javascript -->
+    <script src="./loginForm.js"></script>
+  </body>
+</html>
